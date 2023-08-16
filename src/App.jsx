@@ -1,21 +1,17 @@
+import React from 'react';
 import './App.css'
 import { Routes, Route, Link } from "react-router-dom";
-import Login from './components/Login.jsx';
-import Posts from './components/Posts.jsx';
-import Profile from './components/Profile.jsx';
-import Register from './components/Register.jsx';
-
+//import { Routes, Route, Link } from "react-router-dom";
+import Login from './components/Login';
+import Posts from './components/Posts';
+import Profile from './components/Profile';
+import Register from './components/Register';
 
 function App() {
-  
-  
 
-  return (
-    
+  return (  
     <>
-    
       <div id="container">
-      
         <h1></h1>
       <div id="navbar">
         <Link to = "/login">login</Link>
@@ -29,11 +25,9 @@ function App() {
           <Route path = "/posts" element = {<Posts/>}/>
           <Route path = "/profile" element = {<Profile/>}/>
           <Route path = "/register" element = {<Register/>}/>
-
         </Routes>
       </div>
     </div>
- 
     </>
   )
 }
